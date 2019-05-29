@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}
+Student Profile
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+  <div class="jumbotron" rel="stylesheet"style="background-color: white; ">
+    <div class="row">
+    <div class="col-4">
+    <center> <h2> Select a class </h2> </center>
+    <hr>
+    <form method = "GET" action ="/attendance">
+      Class:
+      <select name="course" class="form-control">
+        <option value=""></option>
+        {% for each in courses %}
+        <option value="{{each}}">{{each}}</option>
+        {% endfor %}
+      </select> <br>
+      Date:
+      <input type="date" name="date" class="form-control" required>
+      <br>
+      <input class="btn btn-info btn-block" type="submit" name="form" value="Submit">
+      <br><br>
+    </form>
+  </div>
+
+<div class="col-8">
+    {% if searched %}
+    <h2 style="text-align:center;">Attendance for {{course}} on {{date}}</h2>
+    <hr>
+    <form method="POST" action="/attendance">
+      {% for each in students %}
+      {{students[each][0]}} ({{each}})
+        {% if students[each][1] %}
+          <input name="{{each}}" type="radio" value="P" checked>Present</input>
+          <input name="{{each}}" type="radio" value="A">Absent</input><br>
+        {% else %}
+          <input name="{{each}}" type="radio" value="P">Present</input>
+          <input name="{{each}}" type="radio" value="A" checked>Absent</input><br>
+        {% endif %}
+      {% endfor %}
+      <br>
+      <input class="btn btn-info pull-right" type="submit" name="form" value="Save">
+    </form><br>
+    {% endif %}
+
+</center>
+</div>
+</div>
+  </div>
+</div>
+
+  <br><br>
+{% endblock %}

@@ -1,0 +1,90 @@
+Da Misfits
+Giorgio and Company
+pd 9
+
+ ______   ______   __   __   __       ______   _______
+/_____/\ /_____/\ /_/\ /_/\ /_/\     /_____/\ /______/\
+\:::_ \ \\::::_\/_\:\ \\ \ \\:\ \    \:::_ \ \\::::__\/__
+ \:\ \ \ \\:\/___/\\:\ \\ \ \\:\ \    \:\ \ \ \\:\ /____/\
+  \:\ \ \ \\::___\/_\:\_/.:\ \\:\ \____\:\ \ \ \\:\\_  _\/
+   \:\/.:| |\:\____/\\ ..::/ / \:\/___/\\:\_\ \ \\:\_\ \ \
+    \____/_/ \_____\/ \___/_(   \_____\/ \_____\/ \_____\/
+==============================================================
+
+
+## Format all Devlogs updates like this: firstL -- TIMESTAMP\n + the update ##
+
+
+
+
+kevinL -- 2018-05-18 14:21:20
+	Added temporary base files with script, added the deployment deliverable yesterday
+
+giorgioV -- 2018-05-21 12:46:20
+	Made most of the html pages. Actually doing works. Need to work on my leadership, group is falling behind. Especially Kevin, he's severely lacking.
+
+jackieX -- 2018-05-22 14:00:27
+	wrote all the functions in db.py
+
+kevinL -- 2018-05-22 14:52:58
+	added more html files and created initial navbar
+
+jackieX -- 2018-05-24 14:51:17
+	debugged and have main.py running
+
+jackieX -- 2018-05-25 14:54:06
+	added more into db.py
+
+jackieX -- 2018-05-26 13:23:17
+	base for all html files
+
+jackieX -- 2018-05-29 08:19:02
+	login and create working
+
+kevinL -- 2018-05-29 12:45:35
+	got login logout navbar to work
+
+kevinL -- 2018-05-31 14:35:54
+	worked on permission things
+
+jackieX -- 2018-05-31 14:38:42
+	radio buttons and permissions for users
+
+kevinL -- 2018-06-06 15:34:25
+	debugged account type errors, figured out deployment problems, working with jackie on transferring changes from main.py to __init__.py
+
+kevinL -- 2018-06-07 18:04:55
+	fixed more styling, updated navbar and other stuff idk
+
+jackieX -- 2018-06-08 09:47:11
+  halfway done with data transfer between sqlite and html
+
+cynthiaC -- 2018-06-08 14:21:38
+	integrated calendar stuff
+
+jackieX -- 2018-06-08 16:53:15
+	class route working, profile in the works
+
+jackieX -- 2018-06-08 18:08:21
+	profile route is done
+
+jackieX -- 2018-06-08 19:00:10
+	attendance working except keeping presence
+
+kevinL -- 2018-06-09 16:18:06
+	Fixed create acc error and the html for forms
+
+jackieX -- 2018-06-13 01:11:19
+	saves attendance
+
+jackieX -- 2018-06-13 01:31:53
+	working add leader
+
+jackieX -- 2018-06-13 02:40:56
+	excuse route is fully working
+
+kevinL -- 2018-06-13 07:59:42
+	last minute html changes
+
+jackieX -- 2018-06-13 10:42:13
+	attendance working

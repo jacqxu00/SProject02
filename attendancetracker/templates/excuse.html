@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block title %}
+Profile
+{% endblock %}
+
+{% block body %}
+<div class="container">
+  <div class="jumbotron" rel="stylesheet"style="background-color: white; ">
+    <div class="row">
+    <div class="col-4">
+      <center> <h2> Select a class, </h2> </center>
+      <hr>
+      <form method = "GET" action ="/excuse">
+      Class:
+      <select name="course" class="form-control" required>
+        <option value=""></option>
+        {% for each in courses %}
+          <option value="{{each}}">{{each}}</option>
+        {% endfor %}
+      </select>
+      <br>
+      <input class="btn btn-info btn-block" type="submit" name="form" value="Submit"><br>
+    </form>
+    <center> <h2> then a student: </h2> </center>
+    <hr>
+    <form method = "GET" action ="/excuse">
+      Student:
+      <select name='student' class="form-control" required>
+        {% for each in students %}
+        <option value="{{each}}">{{each}}</option>
+        {% endfor %}
+      </select>
+      <br>
+      <input class="btn btn-info btn-block" type="submit" name="form" value="Submit">
+      <br><br>
+    </form>
+  </div>
+  <div class="col-8">
+    {% if searched %}
+    <h2><center>Excuse Absence for {{name}}</center></h2>
+    <hr>
+    <p class="text-muted text-center">{{username}}</p>
+
+      <form method = "POST" action ="/excuse">
+        Date: <br>
+        <input class="form-control" type="date" name="date" required><br><br>
+
+        <div class="form-group">
+          <label>Reason:</label>
+          <input type="text" class="form-control" placeholder="Provide an explanation" name="reason" required>
+        </div>
+
+        <input class="btn btn-info btn-block" type="submit" name="form" value="Submit">
+        <br><br>
+      </form>
+    {% endif %}
+  </div>
+</div>
+
+  </div>
+</div>
+<br><br>
+{% endblock %}

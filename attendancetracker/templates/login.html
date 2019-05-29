@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}
+Login
+{% endblock %}
+
+{% block body %}
+<div class="container">
+  <div class="jumbotron" rel="stylesheet"style="background-color: white; ">
+  <div class="row">
+    <div class="col-7">
+
+        <h1><center>Attendance Tracker</center></h1><br>
+        <p>This attendance tracker is designed
+        for classes with lots of students (such as chorus and band). These classes
+        usually have designated section leaders to help with attendance, and students'
+        grades are attendance-based. This site is created to help teachers track
+        attendance and to help students track their grades.</p>
+        <p class="text-muted">Created by Jackie Xu, Kevin Li, Cynthia Cheng, Giorgio Vidali. Class of 2018.</p>
+
+    </div>
+    <div class="col-5">
+        <center>
+  <h2>Login</h2> <br>
+  <form method = "POST" action ="/login">
+
+  <div class="form-group">
+    <label for="user">Enter your Username</label>
+    <input name="username" type="text" class="form-control" id="user" placeholder="Enter username">
+  </div>
+  <div class="form-group">
+    <label for="pass">Enter your Password</label>
+    <input name="password" type="password" class="form-control" id="pass" placeholder="Enter password">
+  </div>
+  <input class="btn btn-info btn-block " type="submit" name="form" value="Login">
+  <br><br>
+  </form>
+
+  Don't have an account? <a class="text-muted" href="/create">Register</a>
+  </form>
+    </div>
+  </div>
+</center>
+  </div>
+</div>
+
+  <br><br>
+{% endblock %}

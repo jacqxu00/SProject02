@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}
+Home
+{% endblock %}
+
+{% block body %}
+<div class="container">
+  <div class="jumbotron" rel="stylesheet"style="background-color: white; ">
+    <H2 style="text-align:center;">Home</h2> <br><br>
+  	<form style="text-align:center;"method = "POST" action ="/home">
+            Add Section Leaders <br><br>
+            Course Code: <br>
+            <input type="text" name="coursecode" placeholder="Course code" required> <br><br>
+            Student username: <br>
+            <input type = "text" name = "student" placeholder="Student email" required>  <br><br>
+
+            <button class="btn btn-default" type="submit" style="background-color: lightblue;" value="Submit">Submit</button>
+  	</form>
+	<br>
+
+</center>
+
+
+  </div>
+</div>
+
+  <br><br>
+<div class="row">
+</div>
+{% endblock %}
